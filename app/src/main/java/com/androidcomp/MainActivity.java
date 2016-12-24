@@ -4,7 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
-import com.biztwo.getBizOneValue;
+import com.biztwo.Biztwo_getBizOneValueReflect;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
 
         try {
             TextView tv = (TextView) findViewById(R.id.tv);
-            tv.setText(getBizOneValue.getStr());
+            tv.setText(Biztwo_getBizOneValueReflect.getStrFromOtherBizOne());
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
