@@ -6,7 +6,9 @@ import android.widget.TextView;
 
 import com.bizone.BizOne;
 import com.biztwo.BizTwoRegisteImple;
+import com.biztwo.BiztwoProtocol;
 import com.biztwo.Biztwo_getBizOneValueReflect;
+import com.example.MediatorProtocol;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -24,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         biz.registe("two", biz);
         tv.setText(BizOne.testRegiste("two"));
 
-
+        new MediatorProtocol().registe("two", new BiztwoProtocol());
+        tv.setText(BizOne.testProtocol("two"));
     }
 }
