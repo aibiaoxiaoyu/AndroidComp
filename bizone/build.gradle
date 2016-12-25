@@ -1,4 +1,9 @@
-apply plugin: 'com.android.library'
+if(isDebug.toBoolean()){
+    apply plugin: 'com.android.library'
+}else{
+    apply plugin: 'com.android.library'
+}
+
 
 android {
     compileSdkVersion 23
