@@ -8,7 +8,7 @@ import com.example.ImediatorReflect;
  */
 
 public class Biztwo_getBizOneValueReflect {
-    public static String getStrFromOtherBizOne() throws ClassNotFoundException {
+    public static String getStrFromOtherBizOne()  {
 
         ImediatorReflect c = null;
         try {
@@ -17,6 +17,8 @@ public class Biztwo_getBizOneValueReflect {
         } catch (InstantiationException e) {
             e.printStackTrace();
         } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
         return null;
